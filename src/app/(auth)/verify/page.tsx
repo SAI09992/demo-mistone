@@ -104,13 +104,13 @@ function VerifyForm() {
                                 <FormItem className="flex flex-col items-center">
                                     <FormControl>
                                         <InputOTP maxLength={6} {...field}>
-                                            <InputOTPGroup className="gap-3">
-                                                <InputOTPSlot index={0} className="w-12 h-12 md:w-16 md:h-16 text-lg md:text-xl text-white bg-[#1f1f1f] border-2 border-white/10 rounded-xl focus:border-[#D9027D] focus:ring-2 focus:ring-[#D9027D]/30 transition-all text-center" />
-                                                <InputOTPSlot index={1} className="w-12 h-12 md:w-16 md:h-16 text-lg md:text-xl text-white bg-[#1f1f1f] border-2 border-white/10 rounded-xl focus:border-[#D9027D] focus:ring-2 focus:ring-[#D9027D]/30 transition-all text-center" />
-                                                <InputOTPSlot index={2} className="w-12 h-12 md:w-16 md:h-16 text-lg md:text-xl text-white bg-[#1f1f1f] border-2 border-white/10 rounded-xl focus:border-[#D9027D] focus:ring-2 focus:ring-[#D9027D]/30 transition-all text-center" />
-                                                <InputOTPSlot index={3} className="w-12 h-12 md:w-16 md:h-16 text-lg md:text-xl text-white bg-[#1f1f1f] border-2 border-white/10 rounded-xl focus:border-[#D9027D] focus:ring-2 focus:ring-[#D9027D]/30 transition-all text-center" />
-                                                <InputOTPSlot index={4} className="w-12 h-12 md:w-16 md:h-16 text-lg md:text-xl text-white bg-[#1f1f1f] border-2 border-white/10 rounded-xl focus:border-[#D9027D] focus:ring-2 focus:ring-[#D9027D]/30 transition-all text-center" />
-                                                <InputOTPSlot index={5} className="w-12 h-12 md:w-16 md:h-16 text-lg md:text-xl text-white bg-[#1f1f1f] border-2 border-white/10 rounded-xl focus:border-[#D9027D] focus:ring-2 focus:ring-[#D9027D]/30 transition-all text-center" />
+                                            <InputOTPGroup className="gap-4">
+                                                <InputOTPSlot index={0} className="w-12 h-14 md:w-16 md:h-16 text-2xl text-white bg-transparent border-b-2 border-white/20 rounded-none focus:border-[#D9027D] focus:ring-0 transition-all text-center" />
+                                                <InputOTPSlot index={1} className="w-12 h-14 md:w-16 md:h-16 text-2xl text-white bg-transparent border-b-2 border-white/20 rounded-none focus:border-[#D9027D] focus:ring-0 transition-all text-center" />
+                                                <InputOTPSlot index={2} className="w-12 h-14 md:w-16 md:h-16 text-2xl text-white bg-transparent border-b-2 border-white/20 rounded-none focus:border-[#D9027D] focus:ring-0 transition-all text-center" />
+                                                <InputOTPSlot index={3} className="w-12 h-14 md:w-16 md:h-16 text-2xl text-white bg-transparent border-b-2 border-white/20 rounded-none focus:border-[#D9027D] focus:ring-0 transition-all text-center" />
+                                                <InputOTPSlot index={4} className="w-12 h-14 md:w-16 md:h-16 text-2xl text-white bg-transparent border-b-2 border-white/20 rounded-none focus:border-[#D9027D] focus:ring-0 transition-all text-center" />
+                                                <InputOTPSlot index={5} className="w-12 h-14 md:w-16 md:h-16 text-2xl text-white bg-transparent border-b-2 border-white/20 rounded-none focus:border-[#D9027D] focus:ring-0 transition-all text-center" />
                                             </InputOTPGroup>
                                         </InputOTP>
                                     </FormControl>

@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
-import { Loader2, ArrowLeft } from "lucide-react"
+import { Loader2, ArrowLeft, Pencil } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -48,7 +48,7 @@ function VerifyForm() {
 
     if (phone) {
       login(phone)
-      router.push("/food")
+      router.push(`/name?phone=${phone}`)
     } else {
       router.push("/login")
     }
@@ -83,7 +83,16 @@ function VerifyForm() {
           </h1>
           <p className="mt-2 text-white/50 text-sm md:text-base text-center">
             Enter the 6-digit code sent to<br />
-            <span className="text-white/70 font-medium">{phone}</span>
+            <span className="inline-flex items-center gap-2">
+              <span className="text-white/70 font-medium">{phone}</span>
+              <button
+                onClick={() => router.push("/login")}
+                className="p-1 rounded-full hover:bg-white/10 transition-colors"
+                title="Change number"
+              >
+                <Pencil className="h-3.5 w-3.5 text-[#D9027D]" />
+              </button>
+            </span>
           </p>
         </div>
         <Form {...form}>

@@ -8,6 +8,7 @@ interface UserState {
   isAuthenticated: boolean
   login: (phone: string) => void
   logout: () => void
+  setName: (name: string) => void
   updateProfile: (data: { name?: string; email?: string }) => void
 }
 
@@ -20,6 +21,7 @@ export const useUserStore = create<UserState>()(
       isAuthenticated: false,
       login: (phone) => set({ phone, isAuthenticated: true }),
       logout: () => set({ phone: null, name: "Guest User", email: null, isAuthenticated: false }),
+      setName: (name) => set({ name }),
       updateProfile: (data) => set((state) => ({ ...state, ...data })),
     }),
     {
@@ -27,3 +29,4 @@ export const useUserStore = create<UserState>()(
     }
   )
 )
+

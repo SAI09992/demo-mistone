@@ -82,6 +82,7 @@ export default function LoginPage() {
                                                     transition={{ duration: 0.3 }}
                                                 />
                                                 <input
+                                                    autoFocus
                                                     placeholder="Enter mobile number"
                                                     type="tel"
                                                     className={`

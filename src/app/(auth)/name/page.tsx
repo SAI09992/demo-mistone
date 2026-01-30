@@ -68,6 +68,7 @@ function NameForm() {
                                 transition={{ duration: 0.3 }}
                             />
                             <input
+                                autoFocus
                                 placeholder="Enter your name"
                                 type="text"
                                 value={fullName}

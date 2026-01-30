@@ -103,7 +103,7 @@ function VerifyForm() {
                             render={({ field }) => (
                                 <FormItem className="flex flex-col items-center">
                                     <FormControl>
-                                        <InputOTP maxLength={6} {...field}>
+                                        <InputOTP autoFocus maxLength={6} {...field}>
                                             <InputOTPGroup className="gap-3">
                                                 <InputOTPSlot index={0} className="w-12 h-14 md:w-16 md:h-20 text-2xl font-medium text-white bg-white/5 dark:bg-white/5 border border-white/10 shadow-sm rounded-xl focus:z-10 focus:border-[#D9027D] focus:ring-1 focus:ring-[#D9027D]/50 focus:bg-white/10 transition-all duration-300 text-center" />
                                                 <InputOTPSlot index={1} className="w-12 h-14 md:w-16 md:h-20 text-2xl font-medium text-white bg-white/5 dark:bg-white/5 border border-white/10 shadow-sm rounded-xl focus:z-10 focus:border-[#D9027D] focus:ring-1 focus:ring-[#D9027D]/50 focus:bg-white/10 transition-all duration-300 text-center" />

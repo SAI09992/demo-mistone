@@ -35,7 +35,7 @@ export function AnimatedLogo({ onAnimationComplete }: AnimatedLogoProps) {
     if (!isMounted) {
         return (
             <div className="flex items-center justify-center">
-                <span className="text-5xl md:text-6xl font-black text-[#D9027D] tracking-tighter">
+                <span className="text-5xl md:text-6xl font-black text-[#D9027D] tracking-tighter" style={{ fontFamily: "var(--font-geist-sans), 'Outfit', 'Inter', sans-serif" }}>
                     M
                 </span>
             </div>
@@ -57,6 +57,7 @@ export function AnimatedLogo({ onAnimationComplete }: AnimatedLogoProps) {
                     initial={{ scale: 1.2 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
+                    style={{ fontFamily: "var(--font-geist-sans), 'Outfit', 'Inter', sans-serif" }}
                 >
                     M
                 </motion.span>
@@ -68,6 +69,7 @@ export function AnimatedLogo({ onAnimationComplete }: AnimatedLogoProps) {
                             initial={{ width: 0, opacity: 0 }}
                             animate={{ width: "auto", opacity: 1 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
+                            style={{ fontFamily: "var(--font-geist-sans), 'Outfit', 'Inter', sans-serif" }}
                         >
                             <motion.span
                                 initial={{ x: -20, opacity: 0 }}
